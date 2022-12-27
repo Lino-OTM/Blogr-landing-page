@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | [Blogr]</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./scss/styles.scss" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <nav class="hero__nav-bar">
+        <a class="hero__logo-link" href="#">
+          <img
+            class="hero__logo"
+            src="./assets/images/logo.svg"
+            alt="blogr logo"
+          />
+        </a>
+        <!-- Display menu checkbox -->
+        <input
+          class="hero__menu-checkbox"
+          id="open-close-menu"
+          type="checkbox"
+        />
+        <!-- Hamburger menu icon -->
+        <label class="hero__menu-icon-open-wrapper" for="open-close-menu">
+          <img
+            class="hero__menu-icon"
+            src="./assets/images/icon-hamburger.svg"
+            alt="interactive menu"
+          />
+        </label>
+        <!-- Cross menu icon  -->
+        <label for="open-close-menu" class="hero__menu-icon-close-wrapper">
+          <img
+            class="hero__close-menu-icon"
+            src="./assets/images/icon-close.svg"
+            alt="close interactive menu"
+          />
+        </label>
+
+        <!-- Product - Company - Connect - Btns -->
+        <ul class="hero__menu-items">
+          <!-- Product items -->
+          <li class="hero__menu-item">
+            <input
+              class="hero__product-interactive"
+              type="checkbox"
+              id="product"
+            />
+            <label class="hero__product-item-interactive" for="product"
+              >Product</label
+            >
+            <ul class="hero__product-items">
+              <li class="hero__product-item"><a href="#">Overview</a></li>
+              <li class="hero__product-item"><a href="#">Pricing</a></li>
+              <li class="hero__product-item"><a href="#">Marketplace</a></li>
+              <li class="hero__product-item"><a href="#">Features</a></li>
+              <li class="hero__product-item"><a href="#">Integrations</a></li>
+            </ul>
+          </li>
+
+          <!-- Company items -->
+          <li class="hero__menu-item">
+            <input
+              class="hero__company-interactive"
+              type="checkbox"
+              id="company"
+            />
+            <label class="hero__company-item-interactive" for="company"
+              >Company</label
+            >
+            <ul class="hero__company-items">
+              <li class="hero__company-item"><a href="#">About</a></li>
+              <li class="hero__company-item"><a href="#">Team</a></li>
+              <li class="hero__company-item"><a href="#">Blog</a></li>
+              <li class="hero__company-item"><a href="#">Careers</a></li>
+            </ul>
+          </li>
+          <!-- Connect items -->
+          <li class="hero__menu-item">
+            <input
+              class="hero__connect-interactive"
+              type="checkbox"
+              id="connect"
+            />
+            <label class="hero__connect-item-interactive" for="connect"
+              >Connect</label
+            >
+            <ul class="hero__connect-items">
+              <li class="hero__connect-item"><a href="#">Contact</a></li>
+              <li class="hero__connect-item"><a href="#">Newsletter</a></li>
+              <li class="hero__connect-item"><a href="#">LinkedIn</a></li>
+            </ul>
+          </li>
+
+          <hr class="hero__separation-line" />
+
+          <!-- Buttons -->
+          <li><a href="#" class="hero__login-btn">Login</a></li>
+          <li><a href="#" class="hero__sign-up-btn">Sign Up</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="hero__title">A modern publishing platform</h1>
+      <p class="hero__text">Grow your audience and build your online brand</p>
+      <div class="hero__btns-wrapper">
+        <a class="hero__register-btn" href="#">Start for Free</a>
+        <a class="hero__learn-more-btn" href="#">Learn More</a>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="first-section">
+        <h2 class="first-section__title">Designed for the future</h2>
+
+        <div class="first-section__content-wrapper">
+          <picture class="first-section__img-wrapper">
+            <source
+              media="(min-width:1100px)"
+              srcset="./assets/images/illustration-editor-desktop.svg"
+            />
+            <img
+              class="first-section__img"
+              src="./assets/images/illustration-editor-mobile.svg"
+              alt="illustration of a graphic"
+            />
+          </picture>
+          <div class="first-section__information-wrapper">
+            <h2 class="first-section__information-wrapper-title">
+              Introducing an extensible editor
+            </h2>
+            <p class="first-section__information-wrapper-text">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+            <h2 class="first-section__information-wrapper-title">
+              Robust content management
+            </h2>
+            <p class="first-section__information-wrapper-text">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="second-section">
+        <img
+          class="second-section__img"
+          src="./assets/images/illustration-phones.svg"
+          alt="illustration of two phones"
+        />
+        <div class="second-section__information-wrapper">
+          <h2 class="second-section__information-wrapper-title">
+            State of the Art Infrastructure
+          </h2>
+          <p class="second-section__information-wrapper-text">
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </section>
+
+      <section class="third-section">
+        <picture>
+          <source
+            media="(min-width:1100px)"
+            srcset="./assets/images/illustration-laptop-desktop.svg"
+          />
+          <img
+            class="third-section__img"
+            src="./assets/images/illustration-laptop-mobile.svg"
+            alt="illustration of a laptop"
+          />
+        </picture>
+
+        <div class="third-section__information-wrapper">
+          <h2 class="third-section__information-wrapper-title">
+            Free, open, simple
+          </h2>
+          <p class="third-section__information-wrapper-text">
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+
+          <h2 class="third-section__information-wrapper-title">
+            Powerful tooling
+          </h2>
+          <p class="third-section__information-wrapper-text">
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img
+        class="footer__logo"
+        src="./assets/images/logo.svg"
+        alt="blogr logo"
+      />
+
+      <div class="footer__lists-wrapper">
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#">Product</a></li>
+          <li class="footer__list-item"><a href="#">Overview</a></li>
+          <li class="footer__list-item"><a href="#">Pricing</a></li>
+          <li class="footer__list-item"><a href="#">Marketplace</a></li>
+          <li class="footer__list-item"><a href="#">Features</a></li>
+          <li class="footer__list-item"><a href="#">Integrations</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#">Company</a></li>
+          <li class="footer__list-item"><a href="#">About</a></li>
+          <li class="footer__list-item"><a href="#">Team</a></li>
+          <li class="footer__list-item"><a href="#">Blog</a></li>
+          <li class="footer__list-item"><a href="#">Careers</a></li>
+        </ul>
+
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#">Connect</a></li>
+          <li class="footer__list-item"><a href="#">Contact</a></li>
+          <li class="footer__list-item"><a href="#">Newsletter</a></li>
+          <li class="footer__list-item"><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Ivan</a>.
+      </div>
+    </footer>
+  </body>
+</html>

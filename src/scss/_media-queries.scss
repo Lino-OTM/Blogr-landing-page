@@ -1,0 +1,21 @@
+@media (max-width: 1099px) {
+  .first-section {
+    &__img {
+      max-width: 40rem;
+    }
+  }
+
+  .second-section {
+    &__img {
+      max-width: 26rem;
+    }
+  }
+
+  .third-section {
+    &__img {
+      max-width: 45rem;
+    }
+  }
+}
+
+// only for sections - header - nav-bar and footer are in their files.

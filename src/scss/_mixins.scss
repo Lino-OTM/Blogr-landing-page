@@ -1,0 +1,6 @@
+@import "./variables";
+
+@mixin titles {
+  font-family: $fontOne;
+  color: $veryDarkBlue;
+}

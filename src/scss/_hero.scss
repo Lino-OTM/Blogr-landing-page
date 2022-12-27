@@ -1,0 +1,102 @@
+// mobile
+.hero {
+  background-image: url("../assets/images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(150deg, $veryLightRed, $lightRed);
+  background-size: 360%, auto;
+  background-repeat: no-repeat;
+  background-position: 36% 34%;
+  padding: 3.5rem 1.5rem 9.7rem;
+  text-align: center;
+  border-radius: 0 0 0 6.3rem;
+
+  &__logo {
+    width: 5.1rem;
+  }
+
+  &__title {
+    color: $white;
+    font-family: $fontOne;
+    width: 92%;
+    margin-bottom: 0.9rem;
+    font-size: 2.05rem;
+    line-height: 2.8rem;
+    margin-left: 0.8rem;
+  }
+
+  &__text {
+    color: $white;
+    font-family: $fontOne;
+    width: 85%;
+    font-size: 1.12rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2.8rem;
+  }
+
+  &__btns-wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__register-btn,
+  &__learn-more-btn {
+    text-decoration: none;
+    font-family: $fontTwo;
+    border: 1px solid $white;
+    padding: 0.9rem 1rem;
+    border-radius: 2rem;
+    font-weight: 700;
+  }
+
+  &__register-btn {
+    color: $lightRed;
+    background-color: $white;
+  }
+
+  &__learn-more-btn {
+    background-color: transparent;
+    color: $white;
+    padding: 0.9rem 1.5rem;
+  }
+}
+
+// desktop
+@media (min-width: 1100px) {
+  .hero {
+    padding: 4rem 10.4rem 9.7rem;
+    background-size: 218%, auto;
+    background-position: 25% 52%;
+
+    &__logo {
+      width: 6.3rem;
+    }
+
+    &__title {
+      font-size: 3.66rem;
+      font-family: $fontOne;
+      margin-left: 2.8rem;
+      margin-bottom: 1.85rem;
+    }
+
+    &__text {
+      margin-left: 5.2rem;
+      font-size: 1.25rem;
+    }
+
+    &__register-btn {
+      &:hover {
+        background-color: hsl(355, 100%, 74%);
+        color: $white;
+        border: 1px solid hsl(355, 100%, 74%);
+      }
+    }
+
+    &__learn-more-btn {
+      &:hover {
+        background-color: $white;
+        color: $veryLightRed;
+      }
+    }
+  }
+}
